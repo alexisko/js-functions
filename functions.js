@@ -32,6 +32,9 @@ function increase(num) {
  * @param {number} y
  * @return {number} the sum
  */
+ function add(x, y) {
+ 	return x+y;
+ }
 
 
 /**
@@ -40,7 +43,9 @@ function increase(num) {
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract(x, y) {
+	return x-y;
+}
 
 /**
  * Multiplies two numbers.
