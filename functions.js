@@ -53,6 +53,9 @@ function subtract(x, y) {
  * @param {number} y
  * @return {number} the product
  */
+ function multiply(x, y) {
+ 	return x*y;
+ }
 
 
 /**
@@ -61,6 +64,9 @@ function subtract(x, y) {
  * @param {number} y
  * @return {number} the quotient
  */
+function divide(x, y) {
+	return x/y;
+}
 
 
 /**
@@ -68,6 +74,7 @@ function subtract(x, y) {
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+ 
 
 
 /**
