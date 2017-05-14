@@ -12,13 +12,18 @@ function numberToString(num) {
  * @param {number} n
  * @return {number}
  */
-
+function increase(num) {
+	return num+1;
+}
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+ function decrease(num) {
+ 	return num-1;
+ }
 
 
 /**
