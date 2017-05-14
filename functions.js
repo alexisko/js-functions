@@ -74,7 +74,9 @@ function divide(x, y) {
  * @param {number} x, number to be squared
  * @return {number} squared
  */
- 
+ function square(num) {
+ 	return num*num;
+ }
 
 
 /**
@@ -85,6 +87,26 @@ function divide(x, y) {
  * @param {number} y
  * @return {number} the result
  */
+ function calculate(operation, x, y) {
+ 	var sum;
+ 	if(operation === "add") {
+ 		sum = x+y;
+ 		console.log(x + " + " + y + " = " + sum);
+ 		return sum;
+ 	} else if (operation === "subtract") {
+ 		sum = x-y;
+ 		console.log(x + " - " + y + " = " + sum);
+ 		return sum;
+ 	} else if (operation === "multiply") {
+ 		sum = x*y;
+ 		console.log(x + " * " + y + " = " + sum);
+ 		return sum;
+ 	} else if (operation === "divide") {
+ 		sum = x/y;
+ 		console.log(x + " / " + y + " = " + sum);
+ 		return sum;
+ 	}
+ }
 
 
 /**
