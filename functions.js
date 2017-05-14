@@ -115,6 +115,12 @@ function divide(x, y) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+ function isGreaterThan(a, b) {
+ 	if(a > b) {
+ 		return true;
+ 	}
+ 	return false;
+ }
 
 
 /**
@@ -123,7 +129,12 @@ function divide(x, y) {
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan(a, b) {
+	if(a < b) {
+		return true;
+	}
+	return false;
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -131,7 +142,12 @@ function divide(x, y) {
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual(a, b) {
+	if(a === b) {
+		return true;
+	}
+	return false;
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -139,6 +155,12 @@ function divide(x, y) {
  * @param {number} y
  * @return {number} the smallest number
  */
+function minimum(x, y) {
+	if(x < y) {
+		return x;
+	}
+	return y;
+}
 
 
 /**
@@ -147,6 +169,12 @@ function divide(x, y) {
  * @param {number} y
  * @return {number} the largest number
  */
+ function maximum(x, y) {
+ 	if(x > y) {
+ 		return x;
+ 	}
+ 	return y;
+ }
 
 
 /**
@@ -154,6 +182,12 @@ function divide(x, y) {
  * @param {number} n
  * @return {boolean} the number is even
  */
+ function isEven(num) {
+ 	if(num % 2 === 0) {
+ 		return true;
+ 	}
+ 	return false;
+ }
 
 
 /**
@@ -161,6 +195,12 @@ function divide(x, y) {
  * @param {number} n
  * @return {boolean} the number is odd
  */
+ function isOdd(num) {
+ 	if(Math.abs(num % 2) == 1) {
+ 		return true;
+ 	}
+ 	return false;
+ }
 
 
 /**
