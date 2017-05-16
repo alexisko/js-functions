@@ -120,6 +120,7 @@ function divide(x, y) {
  		return true;
  	}
  	return false;
+ 	//return a > b ... also returns boolean
  }
 
 
@@ -134,6 +135,7 @@ function isLessThan(a, b) {
 		return true;
 	}
 	return false;
+	//return a < b ... also returns boolean
 }
 
 /**
@@ -147,6 +149,8 @@ function areEqual(a, b) {
 		return true;
 	}
 	return false;
+	//return a === b ... also returns boolean (compares values and data type)
+	//a == b (compares values, more loose)
 }
 
 /**
@@ -160,6 +164,7 @@ function minimum(x, y) {
 		return x;
 	}
 	return y;
+	//return Math.min(x, y);
 }
 
 
@@ -174,6 +179,7 @@ function minimum(x, y) {
  		return x;
  	}
  	return y;
+ 	//return Math.max(x, y);
  }
 
 
@@ -200,6 +206,7 @@ function minimum(x, y) {
  		return true;
  	}
  	return false;
+ 	//return !isEven(num)
  }
 
 
@@ -214,6 +221,20 @@ function minimum(x, y) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+ function letterGrade(score, total) {
+ 	var grade = score / total;
+ 	if(grade >= 0.9) {
+ 		return "A";
+ 	} else if(grade >= 0.8) {
+ 		return "B";
+ 	} else if (grade >= 0.7) {
+ 		return "C";
+ 	} else if (grade >= 0.6) {
+ 		return "D";
+ 	} else {
+ 		return "F";
+ 	}	
+ }
 
 
 /**
@@ -223,6 +244,14 @@ function minimum(x, y) {
  * @param {object} restaurant   represents a restaurant object
  * @return {object} restaurant
  */
+ function incrementReviews(restaurant) {
+ 	if(restaurant.hasOwnProperty("reviews")) {
+ 		restaurant.reviews++;
+ 	} else {
+ 		restaurant.reviews = 1;
+ 	}
+ 	return restaurant;
+ }
 
 
 /**
@@ -231,6 +260,9 @@ function minimum(x, y) {
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+ function combine(word1, word2) {
+ 	return word1 + " " + word2;
+ }
 
 
 /**
@@ -240,4 +272,12 @@ function minimum(x, y) {
  * @param {number} radius
  * @return {object} circle
  */
+
+ function createCircle(radius) {
+ 	var circle = {
+ 		circumference: Math.PI*(radius*2),
+ 		area: Math.PI*(radius*radius)
+ 	};
+ 	return circle;
+ }
 
